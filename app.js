@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-
+//Creds info
 const dbI = process.env.MONGO_ATLAS_I_todo_list;
 const dbP = process.env.MONGO_ATLAS_P_todo_list;
 const url = `mongodb+srv://${dbI}:${dbP}@cluster0.qz25g.mongodb.net/todolistDB`;
